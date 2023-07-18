@@ -1,0 +1,65 @@
+:root {
+  font-size: 62.5%; /* 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body * {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 8rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 3rem 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.menu li a {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#menu-item {
+  width: 21px;
+  height: 18px;
+}
+
+#cart-shopping {
+  font-size: 30rem;
+}
