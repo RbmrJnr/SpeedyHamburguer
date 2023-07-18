@@ -1,5 +1,6 @@
 :root {
   font-size: 62.5%; /* 10px */
+  --color-primary: #FF5722;
 }
 
 * {
@@ -41,6 +42,7 @@ a {
 .navbar a h1 {
   font-size: 3.5rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .navbar .menu {
@@ -53,6 +55,12 @@ a {
 .menu li a {
   font-size: 1.8rem;
   font-weight: 500;
+  color: #fff;
+  transition: all 0.3 ease;
+}
+
+.menu li a:hover{
+  color: var(--color-primary);
 }
 
 #menu-item {
@@ -60,6 +68,50 @@ a {
   height: 18px;
 }
 
-#cart-shopping {
-  font-size: 30rem;
+.home{
+  display: flex;
+  background-image: url(../img/fundo-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  font-family: 'Ubuntu',sans-serif;
+  background-attachment: fixed;
+}
+
+.home .max-width{
+  margin: auto 0 auto 3.0rem;
+}
+
+.home .home-content .text-1{
+  font-size: 2.7rem;
+}
+
+.home .home-content .text-2{
+  font-size: 7.5rem;
+  font-weight: bold;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3{
+  font-size: 4.0rem;
+  margin: 5px 0;
+}
+
+.home-content a{
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1.2rem 3.6rem 1.2rem 3.6rem;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.home-content a:hover{
+  background: none;
 }
