@@ -126,7 +126,7 @@ a {
   background: none;
 }
 
-.about, .services {
+.about, .services, .skills {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -239,4 +239,52 @@ section .subtitle{
   padding-bottom: 3rem;
   position: relative;
   text-align: center;
+}
+
+.skills .skills-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .column{
+  width: calc(50% - 3.0rem);
+}
+
+.skills .skills-content .left{
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1.0rem;
+}
+
+.skills .skills-content .left p{
+  text-align: justify;
+  font-weight: 400;
+} 
+
+.skills .skills-content .left a{
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.8rem 1.6rem;
+  margin-top: 2.0rem;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3 ease;
+}
+
+.skills .skills-content .left a:hover{
+  background: none;
+  color: var(--color-primary);
+}
+
+.skills .skills-content .right{
+  width: 45%;
+}
+
+.skills .skills-content .right img{
+  border-radius: 6px;
 }
