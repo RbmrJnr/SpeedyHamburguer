@@ -1,6 +1,7 @@
 :root {
   font-size: 62.5%; /* 10px */
   --color-primary: #FF5722;
+  
 }
 
 * {
@@ -125,15 +126,21 @@ a {
   background: none;
 }
 
-.about {
+.about, .services {
   font-family: 'Poppins', sans-serif;
 }
 
-.about-content {
+.about .about-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+.services .serv-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 section .title {
@@ -183,4 +190,53 @@ section .title {
 .about .about-content .right a:hover {
   color: var(--color-primary);
   background: none;
+}
+
+.services{
+  color: #FFF;
+  background: #111;
+}
+
+.services .serv-content .card{
+  width: calc(33% - 2rem);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+.services img{
+  width: 50px;
+  height: 50px;
+}
+
+.services .serv-content .card:hover{
+  background: var(--color-primary);
+
+}
+
+.services .serv-content .card .box{
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+  transform: scale(1.05);
+}
+
+.services .serv-content .card .text{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+section .subtitle{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  text-align: center;
 }
