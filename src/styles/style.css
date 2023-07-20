@@ -408,6 +408,19 @@ footer span a:hover {
   .max-width {
     padding: 0 5rem;
   }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 6rem;
+  }
+  .about .about-content .right {
+    flex: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -430,6 +443,10 @@ footer span a:hover {
   .home .home-content a {
     font-size: 2rem;
   }
+
+  .about .about-content .right .text {
+    font-size: 1.9rem;
+  }
 }
 
 @media (max-width: 488px) {
@@ -439,5 +456,17 @@ footer span a:hover {
 
   .home .home-content .text-3 {
     font-size: 2.7rem;
+  }
+
+  .about .about-content .left img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .about .about-content .left img {
+    height: 250px;
+    width: 250px;
   }
 }
