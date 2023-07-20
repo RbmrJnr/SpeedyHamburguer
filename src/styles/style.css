@@ -421,6 +421,12 @@ footer span a:hover {
     flex: 100%;
     text-align: center;
   }
+
+  .skills .skills-content .right {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -458,14 +464,16 @@ footer span a:hover {
     font-size: 2.7rem;
   }
 
-  .about .about-content .left img {
+  .about .about-content .left img,
+  .skills .skills-content .right img {
     height: 300px;
     width: 300px;
   }
 }
 
 @media (max-width: 300px) {
-  .about .about-content .left img {
+  .about .about-content .left img,
+  .skills .skills-content .right img {
     height: 250px;
     width: 250px;
   }
