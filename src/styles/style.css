@@ -400,7 +400,7 @@ footer span a:hover {
   }
 
   .max-width {
-    max-width: 930px;
+    max-width: 1000px;
   }
 }
 
@@ -411,15 +411,11 @@ footer span a:hover {
 
   .about .about-content .column {
     width: 100%;
-  }
-  .about .about-content .left {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 6rem;
-  }
-  .about .about-content .right {
-    flex: 100%;
     text-align: center;
+  }
+
+  .about .about-content .right {
+    text-align-last: center;
   }
 
   .services .serv-content .card {
@@ -427,10 +423,28 @@ footer span a:hover {
     margin-bottom: 20px;
   }
 
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skills .skills-content .left {
+    text-align: center;
+  }
+
   .skills .skills-content .right {
     display: flex;
     justify-content: center;
     margin: 0 auto 6rem;
+  }
+
+  .skills .skills-content .right img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .skills .skills-content .left {
+    text-align-last: center;
   }
 }
 
@@ -455,7 +469,8 @@ footer span a:hover {
     font-size: 2rem;
   }
 
-  .about .about-content .right .text {
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
     font-size: 1.9rem;
   }
 
