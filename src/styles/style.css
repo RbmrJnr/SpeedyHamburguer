@@ -385,10 +385,59 @@ footer span a:hover {
     display: inline-block;
     font-size: 2.5rem;
   }
+
+  .home .home-content .text-2 {
+    font-size: 7rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 3.5rem;
+  }
+
+  .home .home-content a {
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+  }
+
+  .max-width {
+    max-width: 930px;
+  }
 }
 
 @media (max-width: 900px) {
   .max-width {
     padding: 0 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-width {
+    padding: 0 2.3rem;
+  }
+
+  .navbar a h1 {
+    font-size: 2.2rem;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 6rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 3.2rem;
+  }
+
+  .home .home-content a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 488px) {
+  .home .home-content .text-2 {
+    font-size: 5rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 2.7rem;
   }
 }
