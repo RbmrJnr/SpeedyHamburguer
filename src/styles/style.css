@@ -203,6 +203,10 @@ a {
 }
 
 /* ==== Section About ==== */
+.about .about-content .left {
+  width: 45%;
+}
+
 .about .about-content .left img {
   height: 400px;
   width: 400px;
@@ -399,8 +403,13 @@ footer span a:hover {
     padding: 1rem 3rem;
   }
 
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+
   .max-width {
-    max-width: 1000px;
+    max-width: 1168px;
   }
 }
 
