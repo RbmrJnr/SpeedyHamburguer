@@ -422,6 +422,11 @@ footer span a:hover {
     text-align: center;
   }
 
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
   .skills .skills-content .right {
     display: flex;
     justify-content: center;
@@ -452,6 +457,10 @@ footer span a:hover {
 
   .about .about-content .right .text {
     font-size: 1.9rem;
+  }
+
+  .services .serv-content .card {
+    width: 100%;
   }
 }
 
