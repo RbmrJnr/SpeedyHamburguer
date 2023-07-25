@@ -1,64 +1,4 @@
-:root {
-  font-size: 62.5%; /* 10px */
-  --color-primary: #ff5722;
-}
-
-::-webkit-scrollbar{
-  width: 10px;
-
-}
-
-::-webkit-scrollbar-track{
-  color: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb{
-  background-color: #888;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background-color: #555;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body * {
-  font-size: 1.6rem;
-}
-
-section {
-  padding: 100px 0;
-}
-
-section .title {
-  position: relative;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  font-family: "Ubuntu", sans-serif;
-}
-
-section .subtitle {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  position: relative;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
+@import url("./global.css");
 
 .link-default {
   display: inline-block;
@@ -327,23 +267,6 @@ a {
 
 .skills .skills-content .right img {
   border-radius: 6px;
-}
-
-/* ==== Footer ==== */
-footer {
-  background: #111;
-  padding: 15px 23px;
-  color: #fff;
-  text-align: center;
-}
-
-footer span a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-footer span a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 1300px) {

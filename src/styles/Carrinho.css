@@ -1,16 +1,18 @@
-html{
+@import url("./global.css");
+
+html {
   height: 100%;
   scroll-behavior: smooth;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-.carrinho .navbar{
+.carrinho .navbar {
   background-color: var(--color-primary);
 }
 
@@ -18,17 +20,17 @@ body{
   color: #fff;
 }
 
-.cart{
+.cart {
   font-family: "Poppins", sans-serif;
 }
 
-.cart .cart-content{
+.cart .cart-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.cart .cart-null .no-product{
+.cart .cart-null .no-product {
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -36,12 +38,12 @@ body{
   margin-top: 3rem;
 }
 
-.cart .cart-null .no-product .small-title{
+.cart .cart-null .no-product .small-title {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.cart .cart-null .no-product a{
+.cart .cart-null .no-product a {
   display: inline-block;
   background-color: var(--color-primary);
   color: #fff;
@@ -51,22 +53,18 @@ body{
   margin-top: 2rem;
   border-radius: 6px;
   transition: all 0.3s ease;
-
+  border: 2px solid var(--color-primary);
 }
 
-.cart .cart-null .no-product a:hover{
+.cart .cart-null .no-product a:hover {
   color: var(--color-primary);
   background: none;
 }
 
 h2 {
-  margin-top: 3.0rem;
+  margin-top: 3rem;
 }
 
-footer {
-  background: #111;
-  padding: 15px 23px;
-  color: #fff;
-  text-align: center;
+.carrinho footer {
   margin-top: auto;
 }
