@@ -1,0 +1,184 @@
+@import url("./global.css");
+
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar .menu-cart {
+    display: flex;
+  }
+
+  .navbar .menu-cart span {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    background: #d6471c;
+    padding: 0px 6px 0px 5px;
+    border-radius: 5px;
+    margin: 0px 0px 0px 5px;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 2;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 8rem;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 7rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 3.5rem;
+  }
+
+  .home .home-content a {
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+  }
+
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .max-width {
+    max-width: 1168px;
+  }
+}
+
+@media (max-width: 900px) {
+  .max-width {
+    padding: 0 5rem;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .about-content .right {
+    text-align-last: center;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skills .skills-content .left {
+    text-align: center;
+  }
+
+  .skills .skills-content .right {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 6rem;
+  }
+
+  .skills .skills-content .right img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .skills .skills-content .left {
+    text-align-last: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-width {
+    padding: 0 2.3rem;
+  }
+
+  .navbar a h1 {
+    font-size: 2.2rem;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 6rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 3.2rem;
+  }
+
+  .home .home-content a {
+    font-size: 2rem;
+  }
+
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 1.9rem;
+  }
+
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 488px) {
+  .home .home-content .text-2 {
+    font-size: 5rem;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 2.7rem;
+  }
+
+  .about .about-content .left img,
+  .skills .skills-content .right img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .about .about-content .left img,
+  .skills .skills-content .right img {
+    height: 250px;
+    width: 250px;
+  }
+}
