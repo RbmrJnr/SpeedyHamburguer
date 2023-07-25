@@ -33,15 +33,19 @@
     />
     <meta name="robots" content="index, follow" />
 
-    <!-- Estilos -->
+    <!-- Estilo -->
     <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="stylesheet" href="./src/styles/Footer.css"/>
-    <link rel="stylesheet" href="./src/styles/Responsive.css"/>
-    <link rel="stylesheet" href="./src/styles/NavBar.css"/>
-    <link rel="stylesheet" href="./src/styles/Scrollbar.css"/>
-
+    
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      @media (max-width: 1100px){
+        .menu-btn {
+        display: block;
+        z-index: 2;
+  }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -70,7 +74,7 @@
               <a href="" class="menu-btn">Cardápio</a>
             </li>
             <li>
-              <a href="" class="menu-btn link-image-cart">
+              <a href="./Carrinho.html" class="menu-btn link-image-cart">
                 <i class="fas fa-shopping-cart"></i>
                 Carrinho</a
               >
