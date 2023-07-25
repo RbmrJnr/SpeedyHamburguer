@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+.detalhes .navbar {
+    background-color: var(--color-primary);
+  }
+  
+  .detalhes .menu li a:hover {
+    color: #fff;
+  }
