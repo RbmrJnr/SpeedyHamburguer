@@ -1,0 +1,17 @@
+@import url("./global.css");
+/* ==== Footer ==== */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+
+footer span a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}

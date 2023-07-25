@@ -1,0 +1,81 @@
+@import url("./global.css");
+/* ==== Navbar ==== */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 3rem 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background-color: var(--color-primary);
+}
+
+.navbar.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.menu li a {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3 ease;
+}
+
+.menu li a i {
+  font-size: 1.8rem;
+}
+
+.menu li a:hover {
+  color: var(--color-primary);
+}
+
+.link-image-cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+.menu-btn i {
+  font-size: 2.3rem;
+}
+
+.menu-cart {
+  display: none;
+}
+
+.menu-cart i {
+  color: #fff;
+  font-size: 2.3rem;
+}
