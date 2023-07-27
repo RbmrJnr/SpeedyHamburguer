@@ -63,6 +63,30 @@ function exibirProdutos(produtos) {
         </div>
     `
   })
+
+  // Define uma função chamada "passaValor" que rediciona o usuário para página "Detalhes.html" passando o ID do produto como parâmetro
+  function passaValor(valor) {
+    window.location = "Detalhes.html?produto=" + valor
+  }
+
+  // Encontra todos os elementos HTML com a classe "link-details-product" que são os links de detalhes dos produtos
+  const linksDetailsProducts = document.querySelectorAll(
+    ".link-details-product"
+  )
+
+  // Itera sobre todos os links de detalhes e adiciona um evento de clique para cada um
+  linksDetailsProducts.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      // Obtem o valor do atributo "key" do link, que contem o ID do produto
+      const key = link.getAttribute("key")
+
+      // Chama a função "passaValor" passando o ID do produto como parãmetro para redirecionar o user
+      passaValor(key)
+
+      // Impede o comportamento padrão do link e evita que a página seja recarregada
+      event.preventDefault()
+    })
+  })
 }
 
 // Chama a função para buscar os produtos quando a página estiver pronta
