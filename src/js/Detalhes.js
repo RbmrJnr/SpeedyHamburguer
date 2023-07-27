@@ -74,7 +74,7 @@ function addItemToCart(resposta, produtoID) {
     }, 2000)
 
     // Atualiza a quantidade do carrinho
-    // atualizaQtdeCart()
+    atualizaQtdeCart()
   } else {
     const erro = document.getElementById("error")
     erro.innerHTML = `* A quantidade deve ser um número entre 1 e 15`
@@ -108,6 +108,24 @@ function initializePage() {
       exibirDados.innerHTML = `<div class="title-details">Erro ao obter os dados.</div>`
     })
 }
+
+// Mostra a quantidade de itens do carrinho
+function atualizaQtdeCart() {
+  let exibeQtdeCart = document.getElementById("cont-cart")
+  let item = JSON.parse(sessionStorage.getItem("items"))
+  let qtde = []
+  if (item != null) {
+    item.forEach((item) => {
+      qtde.push(parseInt(item.qtd))
+    })
+    let total = qtde.reduce((total, qtde) => total + qtde, 0)
+    exibeQtdeCart.innerHTML = `${total}`
+  } else {
+    exibeQtdeCart.innerHTML = `0`
+  }
+}
+
+atualizaQtdeCart()
 
 // Chamada da função para inicializar a página
 initializePage()
